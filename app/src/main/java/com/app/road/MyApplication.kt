@@ -15,6 +15,8 @@ import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
 
 const val ONESIGNAL_APP_ID = "71b73218-0e0a-4339-9fc5-e5420351844b"
+
+//simple comment
 class MyApplication : Application() {
 
     override fun onCreate() {
