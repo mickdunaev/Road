@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Путь</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="intro1_header">Хочешь изменить жизнь?</string>
+    <string name="intro1_header2">Ты уже сделал хороший шаг на этом Пути.</string>
+    <string name="intro1_text">Но…  для того, чтобы сдвинуться с места, необходимо изменить свой образ мышления.</string>
+    <string name="sign_in">Вход</string>
+    <string name="sign_up">Регистрация</string>
+
+    <string name="intro1_title">Ты здесь, чтобы изменить свою жизнь к лучшему?</string>
+    <string name="intro1_body1">Тогда ты в нужном месте</string>
+    <string name="intro1_body2">Но…  для того, чтобы сдвинуться с места, необходимо (и это важное условие) изменить свой образ мышления.</string>
+    <string name="intro2_title">Ты хочешь изменить обстоятельства?</string>
+    <string name="intro2_body">Для этого развивай в себе необходимый тип сознания.\n\nПреуспевающий человек всегда обладает сознанием, настроенным на успех.\n\nЭто его образ мышления, его убеждения!\n\n<b>Ведь наши убеждения</b>\n\n
+   – рождают наши мысли\n
+   – мысли рождают действия\n
+   – действия рождают реальность.
+</string>
+    <string name="sign_info">При входе или регистрации вы принимате условия <b>пользовательского</b> соглашения и ознакомлены с <b>политикой конфиденциальности</b>. Настройки подписок доступны полсе регистрации</string>
+</resources>

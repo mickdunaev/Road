@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    tools:context=".activity.SubscribeBaseActivity">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sign_bg" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="-16dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/month" />
+
+
+    <FrameLayout
+        android:id="@+id/subscribe"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/subscibe_month"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/month">
+
+        <TextView
+            android:id="@+id/subPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/avenir_medium"
+            android:text="Рассрочка 4000 Р (условия)"
+            android:textColor="@color/colorAccent"
+            android:textColorHighlight="@color/black"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/accept"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_vertical"
+            android:text="С условиями ознакомлен"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dihatelnay" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/sing_in_place" />
+
+    <TextView
+        android:id="@+id/trial"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/test_result1"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Начать пробный период"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/year"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/subscibe_year"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/trial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:text="Годовой тариф"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="40dp"
+            android:text="Комплексное решение и мотивирование целей"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/month"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/subscibe_month"
+        app:layout_constraintBottom_toTopOf="@+id/year"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tvMonthPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/avenir_medium"
+            android:text="Полный курс 3500 Р"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvPriceWithoutDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/avenir_light"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </FrameLayout>
+
+    <TextView
+        android:fontFamily="@font/avenir_medium"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textSize="18sp"
+        android:id="@+id/nameCourse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Путь на миллион"
+        app:layout_constraintBottom_toTopOf="@+id/month"
+        app:layout_constraintStart_toStartOf="@+id/month" />
+
+    <Button
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="тестовая покупка"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView10" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

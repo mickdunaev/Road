@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/calendar_block"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/exercise_not_complite_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <CalendarView
+            android:id="@+id/calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/CalendarViewTask"
+            android:backgroundTint="@color/accent"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/note_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:gravity="top|start"
+            android:hint="Заметка"
+            android:fontFamily="@font/avenir_light"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:maxLines="10"
+            android:minLines="2"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/task_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/avenir_medium"
+            android:text="Задача на сегодня"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/avenir_light"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/header"
+            app:layout_constraintTop_toBottomOf="@+id/header" />
+
+        <FrameLayout
+            android:id="@+id/task_go"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/task_go_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text">
+
+            <ImageView
+                android:id="@+id/imageView23"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_horizontal|center_vertical"
+                app:srcCompat="@drawable/icon_task_go" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/fromDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20.05.2022"
+            android:textColor="@color/black"
+            android:fontFamily="@font/avenir_medium"
+            app:layout_constraintBottom_toBottomOf="@+id/task_go"
+            app:layout_constraintStart_toStartOf="@+id/text"
+            app:layout_constraintTop_toTopOf="@+id/task_go" />
+
+        <TextView
+            android:id="@+id/toDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="22.05.2022"
+            android:textColor="@color/black"
+            android:fontFamily="@font/avenir_medium"
+            app:layout_constraintBottom_toBottomOf="@+id/task_go"
+            app:layout_constraintEnd_toStartOf="@+id/task_go"
+            app:layout_constraintTop_toTopOf="@+id/task_go" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

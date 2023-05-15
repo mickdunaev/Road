@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SelectTimeActivity">
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="Установка времени упражнения"
+        android:fontFamily="@font/avenir_heavy"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView38">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView38">
+
+            <LinearLayout
+                android:id="@+id/morning"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Утренние\nупражнения"
+                    android:fontFamily="@font/avenir_medium"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/view20"
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/time_morning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:text="07:00"
+                    android:fontFamily="@font/avenir_medium"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/morning_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <NumberPicker
+                    android:id="@+id/morning_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:layout_marginEnd="8dp"
+                    android:theme="@style/Theme.Road.NumberPicker" />
+
+                <NumberPicker
+                    android:id="@+id/morning_minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:layout_marginStart="8dp"
+                    android:theme="@style/Theme.Road.NumberPicker" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/day"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView481"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/avenir_medium"
+                    android:text="Дневные\nупражнения"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/view201"
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/time_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:text="07:00"
+                    android:fontFamily="@font/avenir_medium"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/day_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <NumberPicker
+                    android:id="@+id/day_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:layout_marginEnd="8dp"
+                    android:theme="@style/Theme.Road.NumberPicker" />
+
+                <NumberPicker
+                    android:id="@+id/day_minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:layout_marginStart="8dp"
+                    android:theme="@style/Theme.Road.NumberPicker" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/evening"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView482"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="Упражнения\nперед сном"
+                    android:fontFamily="@font/avenir_medium"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/view202"
+                    android:layout_width="1dp"
+                    android:layout_height="50dp"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/time_evening"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:text="07:00"
+                    android:fontFamily="@font/avenir_medium"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/evening_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <NumberPicker
+                    android:id="@+id/evening_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:layout_marginEnd="8dp"
+                    android:theme="@style/Theme.Road.NumberPicker" />
+
+                <NumberPicker
+                    android:id="@+id/evening_minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:layout_marginStart="8dp"
+                    android:theme="@style/Theme.Road.NumberPicker" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ok"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="16dp"
+        style="@style/DefaultAccentButton"
+        android:text="Ок"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

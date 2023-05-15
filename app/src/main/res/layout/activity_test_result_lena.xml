@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_to_start"
+        style="@style/DefaultAccentButton"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="Начать практику"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView22"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:text="Ну а теперь самое интересное,  вперед, в Путь, к новым вершинам!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bt_to_start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView69"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/textView62"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/avenir_heavy"
+        android:text="Ваш результат"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/lichnost"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/red_test_result_bg"
+        app:cardBackgroundColor="@color/red_result"
+        app:cardCornerRadius="60dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView62">
+
+        <ImageView
+            android:id="@+id/imglichnost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/red_test_result_bg" />
+
+        <TextView
+            android:id="@+id/textView63"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:fontFamily="@font/avenir_medium"
+            android:text="Личность"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/zelaniay"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="12dp"
+        android:backgroundTint="@color/yellow_result"
+        app:cardCornerRadius="60dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/strategiay"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lichnost">
+
+        <ImageView
+            android:id="@+id/imgzelaniay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/yellow_test_result_bg" />
+
+        <TextView
+            android:id="@+id/textView64"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:fontFamily="@font/avenir_medium"
+            android:text="Желания"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/strategiay"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:backgroundTint="@color/green_result"
+        app:cardCornerRadius="60dp"
+        app:cardElevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/zelaniay"
+        app:layout_constraintTop_toBottomOf="@+id/lichnost">
+
+        <ImageView
+            android:id="@+id/imgstrategiay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/green_test_result_bg" />
+
+        <TextView
+            android:id="@+id/textView65"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:fontFamily="@font/avenir_medium"
+            android:text="Стратегия"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/avenir_medium"
+        android:gravity="center"
+        android:text="Отлично, спасибо за честность\nперед самим собой! "
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/strategiay" />
+
+    <TextView
+        android:id="@+id/textView69"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="48dp"
+        android:fontFamily="@font/avenir_light"
+        android:text="Данная модель показывает степень проработанности каждого сектора. Зеленый означает, что сектор достаточно хорошо проработан, желтый - что стоит обратить внимание на некоторые зоны, красный - что стоит обратить на данный аспект первоочередное внимание. В процессе прохождения курса мы разберемся со всеми тремя секторами."
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView66" />
+</androidx.constraintlayout.widget.ConstraintLayout>

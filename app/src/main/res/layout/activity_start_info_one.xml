@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.StartInfoOneActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="18dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            android:paddingBottom="86dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Твой личный коуч в телефоне"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                android:fontFamily="@font/avenir_medium"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Уникальные трансформационные практики;"
+                android:fontFamily="@font/avenir_medium"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:drawablePadding="12dp"
+                app:drawableLeftCompat="@drawable/ic_arrow_right" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingStart="16dp"
+                android:text="Медитации, аффирмации, уроки;"
+                android:fontFamily="@font/avenir_medium"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:drawablePadding="12dp"
+                app:drawableLeftCompat="@drawable/ic_arrow_right" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingStart="32dp"
+                android:text="Авторские тренинги от ТОПовых коучей;"
+                android:fontFamily="@font/avenir_medium"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:drawablePadding="12dp"
+                app:drawableLeftCompat="@drawable/ic_arrow_right" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="О приложении"
+                android:textSize="28sp"
+                android:fontFamily="@font/avenir_medium"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+                android:paddingTop="16dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/round_gray_bg"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text=">20 000"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/avenir_heavy"
+                        app:autoSizeTextType="uniform"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="скачиваний\nза 6 месяцев"
+                        android:fontFamily="@font/avenir_light"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/round_gray_bg"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text=">18 000"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/avenir_heavy"
+                        app:autoSizeTextType="uniform"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="продлений подписки на год"
+                        android:fontFamily="@font/avenir_light"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+                android:paddingTop="16dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="12dp"
+                    android:background="@drawable/round_gray_bg"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="1 час"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/avenir_heavy"
+                        app:autoSizeTextType="uniform"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="в день в среднем проводят пользователи в приложении"
+                        android:fontFamily="@font/avenir_light"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/round_gray_bg"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="20 новых"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/avenir_heavy"
+                        app:autoSizeTextType="uniform"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="тренингов в\nразработке и скоро станут доступны"
+                        android:fontFamily="@font/avenir_light"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="О разработчиках"
+                android:textSize="28sp"
+                android:fontFamily="@font/avenir_medium"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+                android:padding="12dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/about_creators_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/avenir_light"
+                    android:textColor="@color/black"
+                    android:text="@string/about_creators_info"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="50"
+                    android:paddingTop="32dp"
+                    android:layout_gravity="bottom"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/about_creators_img"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Начни свой Путь к счастливой жизни прямо сейчас!"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:fontFamily="@font/avenir_medium"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnStart"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="24dp"
+        style="@style/DefaultAccentButton"
+        android:text="Начать"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

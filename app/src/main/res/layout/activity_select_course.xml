@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SelectCourseActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Выбор курса"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageButton" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/courseWeight"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/course_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cardView31"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/weight"
+                    app:civ_border_color="@color/accent"
+                    app:civ_border_width="3dp"
+                    app:civ_circle_background_color="#E0DACC"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView291"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:text="Худеем к лету... и навсегда"
+                    android:textColor="#333333"
+                    app:autoSizeTextType="uniform"
+                    app:layout_constraintBottom_toTopOf="@+id/textView451"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView71"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/cardView31"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <ImageView
+                    android:id="@+id/imageView71"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_next" />
+
+                <TextView
+                    android:id="@+id/textView451"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/avenir_light"
+                    android:minLines="2"
+                    android:text="психология лишнего веса"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView711"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView71"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/cardView31"
+                    app:layout_constraintTop_toBottomOf="@+id/textView291"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <TextView
+                    android:id="@+id/textView711"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/avenir_light"
+                    android:text="Продолжительность курса: 1 день"
+                    android:textColor="#08B84F"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardView31"
+                    app:layout_constraintTop_toBottomOf="@+id/textView451"
+                    app:layout_constraintVertical_bias="0.5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/courseMeditation"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/course_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cardView311"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/medi"
+                    app:civ_border_color="@color/accent"
+                    app:civ_border_width="3dp"
+                    app:civ_circle_background_color="#E0DACC"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView2911"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:text="Медитации"
+                    android:textColor="#333333"
+                    app:autoSizeTextType="uniform"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView711"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/cardView311"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <ImageView
+                    android:id="@+id/imageView711"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_next" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <!--<androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clWantMillion"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/want_million_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cardView"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/money_image"
+                    app:civ_border_color="@color/accent"
+                    app:civ_border_width="3dp"
+                    app:civ_circle_background_color="#A890FE"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView73"
+                    android:layout_width="0dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:text="Путь на миллион"
+                    android:textColor="@color/white"
+                    app:autoSizeTextType="uniform"
+                    app:layout_constraintBottom_toTopOf="@+id/textView75"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                    app:layout_constraintStart_toEndOf="@+id/cardView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_next"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:id="@+id/textView75"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:minLines="2"
+                    android:text="Деньги, отношения или здоровье, что выбираешь? А может лучше всё и сразу?.. Забирай свой миллион во всех сферах! "
+                    android:textColor="#e2dfd6"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                    app:layout_constraintStart_toEndOf="@+id/cardView"
+                    app:layout_constraintTop_toBottomOf="@+id/textView73"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/courseMoneyInHead"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/course_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cardView3"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/money_in_the_head_image"
+                    app:civ_border_color="@color/accent"
+                    app:civ_border_width="3dp"
+                    app:civ_circle_background_color="#E0DACC"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:text="Деньги в голове"
+                    android:textColor="#333333"
+                    app:autoSizeTextType="uniform"
+                    app:layout_constraintBottom_toTopOf="@+id/textView45"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView7"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/cardView3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_next" />
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/avenir_light"
+                    android:minLines="2"
+                    android:text="ТОПовый курс по увеличению Вашего дохода. "
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView71"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView7"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/cardView3"
+                    app:layout_constraintTop_toBottomOf="@+id/textView29"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <TextView
+                    android:id="@+id/textView71"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/avenir_light"
+                    android:text="Продолжительность курса: 28 дней"
+                    android:textColor="#08B84F"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardView3"
+                    app:layout_constraintTop_toBottomOf="@+id/textView45"
+                    app:layout_constraintVertical_bias="0.5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/courseBodyAndMental"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/course_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cardView4"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/health2"
+                    app:civ_border_color="@color/accent"
+                    app:civ_border_width="3dp"
+                    app:civ_circle_background_color="#E0DACC"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvBodyMentalTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:text="Тело и психика"
+                    android:textColor="#333333"
+                    app:autoSizeTextType="uniform"
+                    app:layout_constraintBottom_toTopOf="@+id/textView49"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView8"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/cardView4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_next" />
+
+                <TextView
+                    android:id="@+id/textView49"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/avenir_light"
+                    android:minLines="2"
+                    android:text="Стань здоровым с помощью своего мышления. "
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView72"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView8"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/cardView4"
+                    app:layout_constraintTop_toBottomOf="@+id/tvBodyMentalTitle"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <TextView
+                    android:id="@+id/textView72"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/avenir_light"
+                    android:text="Продолжительность курса: 28 дней"
+                    android:textColor="#08B84F"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardView4"
+                    app:layout_constraintTop_toBottomOf="@+id/textView49"
+                    app:layout_constraintVertical_bias="0.5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/courseMoneyEnergy"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/course_bg"
+                android:clickable="true"
+                android:focusable="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cardView5"
+                    android:layout_width="76dp"
+                    android:layout_height="76dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/money_energy_image"
+                    app:civ_border_color="@color/accent"
+                    app:civ_border_width="3dp"
+                    app:civ_circle_background_color="#E0DACC"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvMoneyEnergyTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:text="Энергия денег"
+                    android:textColor="#333333"
+                    app:autoSizeTextType="uniform"
+                    app:layout_constraintBottom_toTopOf="@+id/textView50"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView9"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/cardView5"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_next" />
+
+                <TextView
+                    android:id="@+id/textView50"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/avenir_light"
+                    android:minLines="2"
+                    android:text="Научись притягивать деньги в свою жизнь. "
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView74"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView9"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/cardView5"
+                    app:layout_constraintTop_toBottomOf="@+id/tvMoneyEnergyTitle"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <TextView
+                    android:id="@+id/textView74"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="2dp"
+                    android:fontFamily="@font/avenir_light"
+                    android:text="Продолжительность курса: 28 дней"
+                    android:textColor="#08B84F"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/cardView5"
+                    app:layout_constraintTop_toBottomOf="@+id/textView50"
+                    app:layout_constraintVertical_bias="0.5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".v4.ui.TraningMillionActivity">
+
+    <TextView
+        android:id="@+id/trial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text=" "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/avenir_medium"
+        android:text="Привет,"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toBottomOf="@+id/trial" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/avenir_heavy"
+        android:text="Николай"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView27"
+        app:layout_constraintStart_toEndOf="@+id/textView27"
+        app:layout_constraintTop_toTopOf="@+id/textView27" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/base_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/name" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView27"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView27"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="1"
+        android:fontFamily="@font/avenir_medium"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView30"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="день!"
+        android:textColor="@color/black"
+        android:fontFamily="@font/avenir_medium"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/day"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выполнив задание, отметь его выполнение кликом по блоку"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:fontFamily="@font/avenir_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <TextView
+        android:id="@+id/mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Утренние упражнения"
+        android:textColor="@color/black"
+        android:fontFamily="@font/avenir_medium"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mode"
+        app:layout_constraintVertical_bias="1.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/block6"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/exercise_not_complite_bg">
+
+                <TextView
+                    android:id="@+id/textView2431"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:text="Вечерние занятия"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView1831"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView1831"
+                    app:layout_constraintTop_toTopOf="@+id/imageView1831" />
+
+                <ImageView
+                    android:id="@+id/imageView1831"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/icon_evening1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/block9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/exercise_not_complite_bg">
+
+                <TextView
+                    android:id="@+id/textView249"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:text="Прогулка"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView189"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView189"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView249"
+                    app:srcCompat="@drawable/icon_evening3" />
+
+                <TextView
+                    android:id="@+id/text19"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:breakStrategy="simple"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/avenir_light"
+                    android:maxLines="3"
+                    android:text="Основная польза вечерних прогулок – это их положительное влияние на организм в целом, улучшение здоровья. Свежий воздух и физическая активность укрепляют иммунную систему. При этом не имеет значения температура воздуха. И зимой, и в летнее время такая ходьба перед сном одинаково полезна для здоровья. Нервная система уже успокоится, и поэтому мозг будет полностью готов ко сну."
+                    app:layout_constraintBottom_toTopOf="@+id/eye19"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView249"
+                    app:layout_constraintTop_toBottomOf="@+id/textView249" />
+
+                <ImageView
+                    android:id="@+id/eye19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/icon_eye" />
+
+                <ImageView
+                    android:id="@+id/info19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/icon_info" />
+
+                <CheckBox
+                    android:id="@+id/block9_check"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/checkbox"
+                    android:button="@null"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView189"
+                    app:layout_constraintStart_toStartOf="@+id/imageView189"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView189" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/block7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/exercise_not_complite_bg">
+
+                <TextView
+                    android:id="@+id/textView247"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:text="Планы на день"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView187"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView187"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView247"
+                    app:srcCompat="@drawable/icon_evening2" />
+
+                <CheckBox
+                    android:id="@+id/block7_check"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/checkbox"
+                    android:button="@null"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView187"
+                    app:layout_constraintStart_toStartOf="@+id/imageView187"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView187" />
+
+                <TextView
+                    android:id="@+id/text17"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:breakStrategy="simple"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/avenir_light"
+                    android:maxLines="3"
+                    android:text="Если вечером выделить на подготовку к завтрашнему дню и планирование  минут 20, то утром ты сэкономишь гораздо больше времени! А если ты не уделишь этому внимание вечером, то утром на сборы потратишь огромное количество времени и нервов)"
+                    app:layout_constraintBottom_toTopOf="@+id/eye17"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView247"
+                    app:layout_constraintTop_toBottomOf="@+id/textView247" />
+
+                <ImageView
+                    android:id="@+id/eye17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/icon_eye" />
+
+                <ImageView
+                    android:id="@+id/info17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/icon_info" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/block8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/exercise_not_complite_bg">
+
+                <TextView
+                    android:id="@+id/textView248"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:text="Медитация"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView188"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView188"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView248"
+                    app:srcCompat="@drawable/icon_morning4" />
+
+                <TextView
+                    android:id="@+id/text18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:breakStrategy="simple"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/avenir_light"
+                    android:maxLines="3"
+                    android:text="Медитация помогает отдохнуть, расслабляет нервную систему, мягко стимулируют
+формирование новых нейронных связей. Помогает легче фокусироваться и
+концентрироваться в течении дня, повышает уровень развития во многих сферах жизни,
+пусть то финансы, отношения, карьера и пр."
+                    app:layout_constraintBottom_toTopOf="@+id/eye18"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView248"
+                    app:layout_constraintTop_toBottomOf="@+id/textView248" />
+
+                <ImageView
+                    android:id="@+id/eye18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/icon_eye" />
+
+                <ImageView
+                    android:id="@+id/info18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/icon_info" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/block1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/exercise_not_complite_bg">
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:text="Выпей стакан теплой воды"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView18"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView18"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView24"
+                    app:srcCompat="@drawable/icon_morning_1" />
+
+                <CheckBox
+                    android:id="@+id/block1_check"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/checkbox"
+                    android:button="@null"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView18"
+                    app:layout_constraintStart_toStartOf="@+id/imageView18"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView18" />
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:breakStrategy="simple"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/avenir_light"
+                    android:maxLines="3"
+                    android:text="Пополнение водного баланса. За ночь человек теряет до 1,5 литров воды. В жаркие и душные ночи эта цифра значительно больше;  Запускается нормальная работа печени, почек;  Стимуляция обменных процессов. Это отличный вариант для желающих похудеть;  Активируется работа сердечно-сосудистой системы.  В крови содержание воды варьируется от 55 до 78%, поэтому при недостаточном ее количестве кровь становится вязкой, а значит, затрудняется работа сердца и всей системы;  Быстрее просыпаетесь и чувствуете себя бодрее."
+                    app:layout_constraintBottom_toTopOf="@+id/eye1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView24"
+                    app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+                <ImageView
+                    android:id="@+id/eye1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/icon_eye" />
+
+                <ImageView
+                    android:id="@+id/info1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/icon_info" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/block2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/exercise_not_complite_bg">
+
+                <TextView
+                    android:id="@+id/textView241"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:text="Сделай зарядку 10 минут"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/imageView181"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView181"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView241"
+                    app:srcCompat="@drawable/icon_morning2" />
+
+                <CheckBox
+                    android:id="@+id/block2_check"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/checkbox"
+                    android:button="@null"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView181"
+                    app:layout_constraintStart_toStartOf="@+id/imageView181"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView181" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/avenir_light"
+                    android:maxLines="3"
+                    android:text="· увеличивает кровоток и лимфоток;\n· повышает тонус;\n· укрепляет иммунитет;\n· снимает вялость после долгого сна;\n· ускоряет внутриклеточный\n  метаболизм;\n· активизирует работу мозга,\n  это положительно влияет на\n  мыслительные процессы и\n  концентрацию внимания;\n· тренирует выносливость;\n· тренирует вестибулярный аппарат."
+                    app:layout_constraintBottom_toTopOf="@+id/eye2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView241"
+                    app:layout_constraintTop_toBottomOf="@+id/textView241" />
+
+                <ImageView
+                    android:id="@+id/eye2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/icon_eye" />
+
+                <ImageView
+                    android:id="@+id/info2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/icon_info" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/block3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/exercise_not_complite_bg">
+
+                <TextView
+                    android:id="@+id/textView242"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:text="Прими контрастный душ и  поулыбайся своему  отражению"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView182"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView182"
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="12dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView242"
+                    app:srcCompat="@drawable/icon_morning3" />
+
+                <CheckBox
+                    android:id="@+id/block3_check"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/checkbox"
+                    android:button="@null"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView182"
+                    app:layout_constraintStart_toStartOf="@+id/imageView182"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView182" />
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/avenir_light"
+                    android:maxLines="3"
+                    android:text="Контрастный душ – это мощная оздоравливающая и закаливающая процедура, которая приносит огромную пользу организму. Чередование теплой и холодной воды бодрит, заряжает энергией, способствует укреплению иммунитета и улучшению состояния кожного покрова.\n\nУлыбка — лучшая профилактика дурного настроения. Возьмите себе за правило
+улыбаться своему отражению в зеркале. Когда человек улыбается, у него вырабатывается
+гормон радости, а уровень стресса понижается. Защитные механизмы помогают бороться
+с хандрой и болезнями в усиленном режиме. Улыбка способствует улучшению
+энергетики. Чем чаще человек улыбается, тем чище его биополе, тем больше оно
+защищает от негативного воздействия внешнего мира."
+                    app:layout_constraintBottom_toTopOf="@+id/eye3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView242"
+                    app:layout_constraintTop_toBottomOf="@+id/textView242" />
+
+                <ImageView
+                    android:id="@+id/eye3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/icon_eye" />
+
+                <ImageView
+                    android:id="@+id/info3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/icon_info" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/block4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/exercise_not_complite_bg">
+
+                <TextView
+                    android:id="@+id/textView2489"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:text="Медитация"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView1889"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView1889"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView2489"
+                    app:srcCompat="@drawable/icon_morning4" />
+
+                <TextView
+                    android:id="@+id/text189"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:breakStrategy="simple"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/avenir_light"
+                    android:maxLines="3"
+                    android:text="Медитация помогает отдохнуть, расслабляет нервную систему, мягко стимулируют
+формирование новых нейронных связей. Помогает легче фокусироваться и
+концентрироваться в течении дня, повышает уровень развития во многих сферах жизни,
+пусть то финансы, отношения, карьера и пр."
+                    app:layout_constraintBottom_toTopOf="@+id/eye189"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView2489"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2489" />
+
+                <ImageView
+                    android:id="@+id/eye189"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/icon_eye" />
+
+                <ImageView
+                    android:id="@+id/info189"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/icon_info" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/block5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/exercise_not_complite_bg">
+
+                <TextView
+                    android:id="@+id/textView2488"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:text="Аффирмации"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView1888"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView1888"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView2488"
+                    app:srcCompat="@drawable/icon_morning5" />
+
+                <TextView
+                    android:id="@+id/text188"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:breakStrategy="simple"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/avenir_light"
+                    android:maxLines="3"
+                    android:text="Аффирмации помогают попасть в скоростной поток к вашим целям. Они мотивируют,
+повышают самооценку, меняют отношение к жизни. \n\nПозитивно меняют восприятие мира.
+Повторяйте аффирмации несколько раз в день, регулярно. Читайте аффирмации так,
+чтобы появлялись позитивные эмоции, ощущения и формировался образ."
+                    app:layout_constraintBottom_toTopOf="@+id/eye188"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView2488"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2488" />
+
+                <ImageView
+                    android:id="@+id/eye188"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/icon_eye" />
+
+                <ImageView
+                    android:id="@+id/info188"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/icon_info" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/block15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/exercise_not_complite_bg">
+
+                <TextView
+                    android:id="@+id/textView2485"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:text="Дневник благодарности"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView1885"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView1885"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView2485"
+                    app:srcCompat="@drawable/base_doc" />
+
+                <TextView
+                    android:id="@+id/text185"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:breakStrategy="simple"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/avenir_light"
+                    android:maxLines="3"
+                    android:text="Благодарность рождает положительные эмоции, повышает качество жизни, помогает
+раскрыть свой потенциал, делает счастливее. Также понижает уровень стресса, повышая
+стрессоустойчивость и ресурсы психики."
+                    app:layout_constraintBottom_toTopOf="@+id/eye185"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView2485"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2485" />
+
+                <ImageView
+                    android:id="@+id/eye185"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/icon_eye" />
+
+                <ImageView
+                    android:id="@+id/info185"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/icon_info" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/block10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/exercise_not_complite_bg">
+
+                <TextView
+                    android:id="@+id/textView2410"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="8dp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:text="Спокойная музыка  для сна"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView1810"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView1810"
+                    android:layout_width="50dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/textView2410"
+                    app:srcCompat="@drawable/icon_evening4" />
+
+                <CheckBox
+                    android:id="@+id/block10_check"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/checkbox"
+                    android:button="@null"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView1810"
+                    app:layout_constraintStart_toStartOf="@+id/imageView1810"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView1810" />
+
+                <TextView
+                    android:id="@+id/text110"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:breakStrategy="simple"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/avenir_light"
+                    android:maxLines="3"
+                    android:text="Музыка для сна – альтернатива лекарственных препаратов от бессонницы. Благотворно влияя на нервную систему, оказывает успокаивающее действие, способствует устранению эмоционального напряжения."
+                    app:layout_constraintBottom_toTopOf="@+id/eye110"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/textView2410"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2410" />
+
+                <ImageView
+                    android:id="@+id/eye110"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/icon_eye" />
+
+                <ImageView
+                    android:id="@+id/info110"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/icon_info" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFinishAction"
+                style="@style/DefaultAccentButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="32dp"
+                android:text="Закончить"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

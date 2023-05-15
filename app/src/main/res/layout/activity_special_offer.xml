@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SpecialOfferActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="18dp"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="94dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Путь к счастливой жизни по цене 1 сессии у психолога!"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:fontFamily="@font/avenir_heavy"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="46"
+                    android:orientation="vertical"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="16dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Только 24 часа!"
+                        android:fontFamily="@font/avenir_heavy"
+                        android:textSize="34sp"
+                        android:textColor="@color/black"
+                        android:gravity="end"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Осталось:"
+                        android:fontFamily="@font/avenir_medium"
+                        android:textSize="22sp"
+                        android:textColor="@color/black"
+                        android:gravity="end"/>
+
+                    <TextView
+                        android:id="@+id/tvCounter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/avenir_heavy"
+                        android:gravity="end"
+                        android:text="23:59:34"
+                        android:textColor="@color/black"
+                        android:textSize="32sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="54"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_dusk_time"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Скидка на любой курс"
+                android:textColor="@color/black"
+                android:fontFamily="@font/avenir_medium"
+                android:textSize="24sp"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="24dp"
+                android:paddingBottom="24dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/year_subscribe_bg">
+
+                <CheckBox
+                    android:id="@+id/checkBox2"
+                    style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:buttonTint="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:text="Годовой тариф"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView16"
+                    app:layout_constraintStart_toEndOf="@+id/checkBox2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/avenir_light"
+                    android:text="Комплексное решение и мотивирование целей"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toTopOf="@+id/textView18"
+                    app:layout_constraintStart_toEndOf="@+id/checkBox2"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:text="2500 руб"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    app:layout_constraintBottom_toTopOf="@+id/view26"
+                    app:layout_constraintStart_toEndOf="@+id/checkBox2"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <View
+                    android:id="@+id/view26"
+                    android:layout_width="160dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="8dp"
+                    android:background="@color/white"
+                    app:layout_constraintBottom_toTopOf="@+id/textView70"
+                    app:layout_constraintStart_toEndOf="@+id/checkBox2"
+                    app:layout_constraintTop_toBottomOf="@+id/textView18"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <TextView
+                    android:id="@+id/textView70"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/avenir_medium"
+                    android:text="@string/year_price_without_discount"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/checkBox2"
+                    app:layout_constraintTop_toBottomOf="@+id/view26"
+                    app:layout_constraintVertical_bias="0.5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="С помощью курса ты:"
+                android:textSize="28sp"
+                android:fontFamily="@font/avenir_medium"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/you_receive_bg"
+                android:padding="16dp"
+                android:fontFamily="@font/avenir_light"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:text="@string/you_receive"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/skip_discount_text"
+                android:gravity="center"
+                android:textSize="22sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/discount_accept_text"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/btnFreeDays"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/free_days_btn_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <View
+            android:id="@+id/view25"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_plus"
+            android:drawablePadding="6dp"
+            android:fontFamily="@font/avenir_light"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:text="Купить"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/view25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/btnGetFreeDays"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="5 Дней бесплатно!"
+            android:fontFamily="@font/avenir_light"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view25"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

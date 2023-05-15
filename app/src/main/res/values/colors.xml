@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="splash">#f4eedf</color>
+    <color name="green">#046f34</color>
+    <color name="intro">#f6f3ec</color>
+    <color name="play_button">#cfe4d8</color>
+    <color name="send_text">#eeeeee</color>
+    <color name="question_text">#e0dacc</color>
+    <color name="answer_text">#cfe4d8</color>
+    <color name="hello_morning">#f2e8d2</color>
+    <color name="hello_dat">#f4eedf</color>
+    <color name="hello_evening">#e2dfd6</color>
+    <color name="subscrible_month">#c8dfd2</color>
+    <color name="exercise_not_complite">#ede9e1</color>
+    <color name="pro">#ede9e1</color>
+    <color name="exercise_complite">#cfe4d8</color>
+    <color name="select_sex">#000000</color>
+    <color name="unselect_sex">#000000</color>
+    <color name="colorAccent">#007EB6</color>
+    <color name="colorSelectCourse">#eeeeee</color>
+    <color name="red_result">#FF6969</color>
+    <color name="green_result">#08B84F</color>
+    <color name="yellow_result">#FFF069</color>
+
+    <color name="accent">#08B84F</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_end">#73FFFFFF</color>
+
+</resources>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SelectCoursActivity">
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Выбор курса"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/back"
+        app:layout_constraintTop_toTopOf="@+id/back" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/vasiliyCourse"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/course_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView38">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cardView3"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/trub"
+            app:civ_border_color="@color/accent"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/avenir_medium"
+            android:text="Василий Трубников"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/cardView3"
+            app:layout_constraintTop_toTopOf="@+id/cardView3" />
+
+        <TextView
+            android:id="@+id/textView51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/avenir_light"
+            android:text="куратор сферы финансов"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/cardView3"
+            app:layout_constraintStart_toEndOf="@+id/cardView3"
+            app:layout_constraintTop_toTopOf="@+id/cardView3" />
+
+        <TextView
+            android:id="@+id/textView52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/avenir_light"
+            android:text="опыт более 5 лет"
+            android:textColor="@color/green"
+            app:layout_constraintBottom_toBottomOf="@+id/cardView3"
+            app:layout_constraintStart_toEndOf="@+id/cardView3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/coach_rating_bg"
+            android:gravity="center"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:text="5.0"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/textView5"
+            app:layout_constraintStart_toEndOf="@+id/textView5"
+            app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/lena_course"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/course_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view24">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/lena_video"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/lena"
+            app:civ_border_color="@color/accent"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/lena_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/avenir_medium"
+            android:text="Екатерина Кудрявцева"
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/lena_video"
+            app:layout_constraintTop_toTopOf="@+id/lena_video" />
+
+        <TextView
+            android:id="@+id/lena_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/avenir_light"
+            android:text="куратор сферы финансов"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/lena_video"
+            app:layout_constraintStart_toEndOf="@+id/lena_video"
+            app:layout_constraintTop_toTopOf="@+id/lena_video" />
+
+        <TextView
+            android:id="@+id/lena_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/avenir_light"
+            android:text="опыт более 5 лет"
+            android:textColor="@color/green"
+            app:layout_constraintBottom_toBottomOf="@+id/lena_video"
+            app:layout_constraintStart_toEndOf="@+id/lena_video" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/coach_rating_bg"
+            android:gravity="center"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:text="5.0"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/lena_name"
+            app:layout_constraintStart_toEndOf="@+id/lena_name"
+            app:layout_constraintTop_toTopOf="@+id/lena_name" />
+
+        <ImageView
+            android:id="@+id/lena_arrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view24"
+        android:layout_width="180dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/vasiliyCourse"
+        app:layout_constraintStart_toStartOf="@+id/vasiliyCourse"
+        app:layout_constraintTop_toBottomOf="@+id/vasiliyCourse" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

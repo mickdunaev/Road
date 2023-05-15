@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.app.road">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+
+    <meta-data
+        android:name="com.google.android.gms.wallet.api.enabled"
+        android:value="true" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_icon_way"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_icon_way_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Road"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name=".v4.ui.WeightVideoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v4.ui.MeditationScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v4.ui.WeightStartScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v4.ui.EkaterinaProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v4.ui.EveningMillionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v4.ui.TraningMillionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v4.ui.BaseMillionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v4.ui.PathMillionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v4.ui.LenaTraningActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v4.ui.CourseMoneyEnergyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v4.ui.CourseBodyAndMentalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v4.ui.CourseMoneyInHeadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v4.ui.MillionStartScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".v4.ui.TvoyLichniyCouchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.CourseMoneyHeadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.SelectCourseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SpecialOfferActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ChoiceWayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.StartInfoOneActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.VasiliyProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Road.StatusBarOverlay" />
+        <activity
+            android:name=".activity.ReportAllActiviy"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ReportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AutorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.NotepadActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BaseLenaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.VideoPlayerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LenaProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Road.StatusBarOverlay" />
+        <activity
+            android:name=".activity.SelectCoursActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.FavoritesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DayAffirmationActivity"
+            android:exported="false" />
+
+        <receiver android:name=".reciver.TimeNotification" />
+
+        <activity
+            android:name=".activity.PlayMeditationActivity"
+            android:exported="false" />
+
+        <service android:name=".service.MediaPlayerService" />
+
+        <activity
+            android:name=".activity.AgreemenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddDiaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.DiaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TaskCompliteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AddTaskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SchedulerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SelectThemeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SelectNotifyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SelectTimeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SelectSexActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LessonsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.BlogActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.AffirmationsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MeditationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TraningActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SubscribeBaseActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Road" />
+        <activity
+            android:name=".activity.BaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TestResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TestLenaResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.TestLenaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.StartTestActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Road.StatusBarOverlay" />
+        <activity
+            android:name=".activity.HelloActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Road.StatusBarOverlay" />
+        <activity
+            android:name=".activity.SignUpActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Road.StatusBarOverlay" />
+        <activity
+            android:name=".activity.SignInActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Road.StatusBarOverlay" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Road.StatusBarOverlay" />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Road.StatusBarOverlay">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Road.StatusBarOverlay" />
+    </application>
+
+</manifest>
